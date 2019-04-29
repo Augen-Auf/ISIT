@@ -1,0 +1,40 @@
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe.config
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\bin\Debug\Карякин-1.pdb
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csprojAssemblyReference.cache
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Form1.resources
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Properties.Resources.resources
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.GenerateResource.cache
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.CoreCompileInputs.cache
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин-1.exe
+C:\Users\Zver\source\repos\Карякин-1\Карякин-1\obj\Debug\Карякин-1.pdb
+D:\Иформационные системы\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe.config
+D:\Иформационные системы\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe
+D:\Иформационные системы\Карякин-1\Карякин-1\bin\Debug\Карякин-1.pdb
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csprojAssemblyReference.cache
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Form1.resources
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Properties.Resources.resources
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.GenerateResource.cache
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.CoreCompileInputs.cache
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин-1.exe
+D:\Иформационные системы\Карякин-1\Карякин-1\obj\Debug\Карякин-1.pdb
+E:\ИСиТ\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe.config
+E:\ИСиТ\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe
+E:\ИСиТ\Карякин-1\Карякин-1\bin\Debug\Карякин-1.pdb
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csprojAssemblyReference.cache
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Form1.resources
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Properties.Resources.resources
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.GenerateResource.cache
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.CoreCompileInputs.cache
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.exe
+E:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.pdb
+D:\ИСиТ\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe.config
+D:\ИСиТ\Карякин-1\Карякин-1\bin\Debug\Карякин-1.exe
+D:\ИСиТ\Карякин-1\Карякин-1\bin\Debug\Карякин-1.pdb
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csprojAssemblyReference.cache
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Form1.resources
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин_1.Properties.Resources.resources
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.GenerateResource.cache
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.csproj.CoreCompileInputs.cache
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.exe
+D:\ИСиТ\Карякин-1\Карякин-1\obj\Debug\Карякин-1.pdb
