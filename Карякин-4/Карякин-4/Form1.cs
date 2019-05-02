@@ -37,15 +37,23 @@ namespace Карякин_4
                 return;
             }
             int n = int.Parse(textBox2.Text.ToString());
+            if (n == 0)
+            {
+                MessageBox.Show("Длина слова должна быть больше нуля!");
+                return;
+            }
             char[] alp = new char[dataGridView2.RowCount];
             string[] alphabet = new string[dataGridView2.RowCount];
+            int p = 1;
             double combinCount = Math.Pow(alp.Length, n);
+            int co = Convert.ToInt32(combinCount);
             double H = 0;
             double[] probability = new double[dataGridView2.RowCount];
             double sumProbabilities = 0;
             string letters1;
             string letters2;
             int y = 0;
+            string str = "";
             List<double> comboP = new List<double>();
             List<string> comboLetters = new List<string>();
             for (int i = 0; i < dataGridView2.RowCount; i++)
@@ -91,45 +99,68 @@ namespace Карякин_4
                 MessageBox.Show("Сумма вероятностей должна быть равна единице.");
                 return;
             }
-            for (int c = 0; c < combinCount; c++)
+            if (combinCount == 1)
             {
-                string combLetters = "";
-                int ic = c;
-                double multiP = 1;
-                for (int j = n - 1; j >= 0; j--)
-                {
-                    int index = ic % probability.Length;
-                    ic /= alp.Length;
-                    combLetters += alphabet[index];
-                    multiP *= probability[index];
-                    
-                }
-                string combLetter = new string(combLetters.Reverse().ToArray());
-                comboLetters.Add(combLetter);
-               
-                comboP.Add(multiP);
-                if (multiP != 0)
-                {
-                    if (combinCount == 1)
-                    {
-                        H = 0;
-                        textBox3.Text = Math.Round(H, 4).ToString();
-                    }
-                    else
-                    {
-                        H += -multiP * Math.Log(multiP, combinCount);
-                    }
-                }
+                H = 0;
+                textBox3.Text = Math.Round(H, 4).ToString();
             }
+            AllCombinationsOfSymbols(alphabet, n,str,comboLetters);
+            AllCombinationsOfProbabl(probability, n,p,comboP);
             for (int r = 0; r < comboLetters.Count; r++)
             {
                 dataGridView1.Rows.Add(comboLetters.ElementAt(r), comboP.ElementAt(r));
+                H += -comboP.ElementAt(r) * Math.Log(comboP.ElementAt(r), combinCount);
             }
-            
-            textBox3.Text = Math.Round(H, 4).ToString();
-            //dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
+            textBox3.Text = Math.Round(H, 4).ToString();                                                                                                                                                                                         // dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
-        
+        private void CombinationsOfSymbols(string[] interCombin, string[] alphabet, int index, int n, string str,List<string> comboLetters)//end =3;s=2
+        {
+            
+            if (index == n)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    str += interCombin[i];
+                }
+                comboLetters.Add(str);
+                return;
+            }
+            for (int i = 0; i < alphabet.Length; i++)
+            {
+                interCombin[index] = alphabet[i];
+                CombinationsOfSymbols(interCombin, alphabet, index+1 , n, str,comboLetters);
+            }
+            return;
+        }
+        private void AllCombinationsOfSymbols(string[] alphabet, int n,string str,List<string> comboLetters)
+        {
+            string[] interCombin = new string[n];
+            CombinationsOfSymbols(interCombin, alphabet, 0, n,str,comboLetters);
+        }
+        private void CombinationsOfProbabl(double[] interProbabl, double[] probability, int index, int n, double p, List<double> comboP)
+        {
+
+            if (index == n)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    p *= interProbabl[i];
+                }
+                comboP.Add(p);
+                return;
+            }
+            for (int i = 0; i < probability.Length; i++)
+            {
+                interProbabl[index] = probability[i];
+                CombinationsOfProbabl(interProbabl, probability, index + 1, n, p,comboP);
+            }
+            return;
+        }
+        private void AllCombinationsOfProbabl(double[] probability, int n, double p,List<double> comboP)
+        {
+            double[] interProbabl = new double[n];
+            CombinationsOfProbabl(interProbabl, probability, 0, n, p,comboP);
+        }
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) & e.KeyChar != 8)
@@ -139,8 +170,18 @@ namespace Карякин_4
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            try
+            {
+                DataGridViewRow rows = new DataGridViewRow();
+                int a = (int)numericUpDown1.Value;
+                dataGridView2.RowCount = (int)a;
 
+            }
+            catch
+            {
+            }
         }
+
         private void numericUpDown1_Click(object sender, EventArgs e)
         {
             try
@@ -154,7 +195,6 @@ namespace Карякин_4
             {
             }
         }
-       
     }
 
 }
