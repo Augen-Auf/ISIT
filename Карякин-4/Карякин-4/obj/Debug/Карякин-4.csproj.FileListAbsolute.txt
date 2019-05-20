@@ -48,3 +48,13 @@ E:\ИСиТ\Карякин-4\Карякин-4\obj\Debug\Карякин-4.csproj.
 E:\ИСиТ\Карякин-4\Карякин-4\obj\Debug\Карякин-4.csproj.CoreCompileInputs.cache
 E:\ИСиТ\Карякин-4\Карякин-4\obj\Debug\Карякин-4.exe
 E:\ИСиТ\Карякин-4\Карякин-4\obj\Debug\Карякин-4.pdb
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\bin\Debug\Карякин-4.exe.config
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\bin\Debug\Карякин-4.exe
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\bin\Debug\Карякин-4.pdb
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин-4.csprojAssemblyReference.cache
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин_4.Form1.resources
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин_4.Properties.Resources.resources
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин-4.csproj.GenerateResource.cache
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин-4.csproj.CoreCompileInputs.cache
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин-4.exe
+C:\Users\Zver\Documents\GitHub\ISIT\Карякин-4\Карякин-4\obj\Debug\Карякин-4.pdb

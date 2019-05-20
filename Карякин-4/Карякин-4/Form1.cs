@@ -104,7 +104,7 @@ namespace Карякин_4
                 H = 0;
                 textBox3.Text = Math.Round(H, 4).ToString();
             }
-            AllCombinationsOfSymbols(alphabet, n,str,comboLetters);
+            AllCombinationsOfSymbols(alphabet, n,str,comboLetters);// где alphabet-кол-во строк; n-длина комбинаций;str-строка с будущей комбинацией;comboLetters-лист
             AllCombinationsOfProbabl(probability, n,p,comboP);
             for (int r = 0; r < comboLetters.Count; r++)
             {
@@ -113,10 +113,14 @@ namespace Карякин_4
             }
             textBox3.Text = Math.Round(H, 4).ToString();                                                                                                                                                                                         // dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
-        private void CombinationsOfSymbols(string[] interCombin, string[] alphabet, int index, int n, string str,List<string> comboLetters)//end =3;s=2
+        private void AllCombinationsOfSymbols(string[] alphabet, int n, string str, List<string> comboLetters)
         {
-            
-            if (index == n)
+            string[] interCombin = new string[n];
+            CombinationsOfSymbols(interCombin, alphabet, 0, n, str, comboLetters);
+        }
+        private void CombinationsOfSymbols(string[] interCombin, string[] alphabet, int index, int n, string str,List<string> comboLetters)
+        {
+             if (index == n)
             {
                 for (int i = 0; i < n; i++)
                 {
@@ -130,16 +134,14 @@ namespace Карякин_4
                 interCombin[index] = alphabet[i];
                 CombinationsOfSymbols(interCombin, alphabet, index+1 , n, str,comboLetters);
             }
-            return;
         }
-        private void AllCombinationsOfSymbols(string[] alphabet, int n,string str,List<string> comboLetters)
+        private void AllCombinationsOfProbabl(double[] probability, int n, double p, List<double> comboP)
         {
-            string[] interCombin = new string[n];
-            CombinationsOfSymbols(interCombin, alphabet, 0, n,str,comboLetters);
+            double[] interProbabl = new double[n];
+            CombinationsOfProbabl(interProbabl, probability, 0, n, p, comboP);
         }
         private void CombinationsOfProbabl(double[] interProbabl, double[] probability, int index, int n, double p, List<double> comboP)
         {
-
             if (index == n)
             {
                 for (int i = 0; i < n; i++)
@@ -155,11 +157,6 @@ namespace Карякин_4
                 CombinationsOfProbabl(interProbabl, probability, index + 1, n, p,comboP);
             }
             return;
-        }
-        private void AllCombinationsOfProbabl(double[] probability, int n, double p,List<double> comboP)
-        {
-            double[] interProbabl = new double[n];
-            CombinationsOfProbabl(interProbabl, probability, 0, n, p,comboP);
         }
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
